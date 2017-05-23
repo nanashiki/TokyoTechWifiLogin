@@ -1,0 +1,93 @@
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "04s-bc-TcA"; */
+"04s-bc-TcA.title" = "Quit";
+
+/* Class = "NSMenuItem"; title = "TokyoTechWifiLogin"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "TokyoTechWifiLogin";
+
+/* Class = "NSMenuItem"; title = "Quit TokyoTechWifiLogin"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit TokyoTechWifiLogin";
+
+/* Class = "NSMenuItem"; title = "About TokyoTechWifiLogin"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About TokyoTechWifiLogin";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Preferences…";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "TokyoTechWifiLogin Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "TokyoTechWifiLogin Help";
+
+/* Class = "NSWindow"; title = "Setting"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Setting";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Bring All to Front";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Account"; ObjectID = "LMG-ha-IyB"; */
+"LMG-ha-IyB.placeholderString" = "Account";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "Lqd-Ej-wfl"; */
+"Lqd-Ej-wfl.title" = "Cancel";
+
+/* Class = "NSMenuItem"; title = "Launch at Login"; ObjectID = "Lya-p0-6e1"; */
+"Lya-p0-6e1.title" = "Launch at Login";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimize";
+
+/* Class = "NSMenuItem"; title = "Hide TokyoTechWifiLogin"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide TokyoTechWifiLogin";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Zoom";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSViewController"; title = "Setting"; ObjectID = "XfG-lQ-9wD"; */
+"XfG-lQ-9wD.title" = "Setting";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "Password"; ObjectID = "afI-Vz-fZ4"; */
+"afI-Vz-fZ4.placeholderString" = "Password";
+
+/* Class = "NSMenuItem"; title = "Login"; ObjectID = "dl0-s5-ZZZ"; */
+"dl0-s5-ZZZ.title" = "Login";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "evQ-mJ-bRi"; */
+"evQ-mJ-bRi.title" = "Label";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "m2S-l7-sBK"; */
+"m2S-l7-sBK.title" = "Save";
+
+/* Class = "NSMenuItem"; title = "Account Setting"; ObjectID = "noG-gC-dvB"; */
+"noG-gC-dvB.title" = "Account Setting";
+
+/* Class = "NSMenu"; title = "TokyoTechWifiLogin"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "TokyoTechWifiLogin";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "vUw-Fg-QAm"; */
+"vUw-Fg-QAm.title" = "OK";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";

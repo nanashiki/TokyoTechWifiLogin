@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084ECE061ED1F769001AAFF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084ECE011ED1F769001AAFF1 /* AppDelegate.swift */; };
+		084ECE071ED1F769001AAFF1 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084ECE021ED1F769001AAFF1 /* ConfirmViewController.swift */; };
+		084ECE091ED1F769001AAFF1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084ECE041ED1F769001AAFF1 /* Login.swift */; };
+		084ECE0A1ED1F76A001AAFF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084ECE051ED1F769001AAFF1 /* ViewController.swift */; };
+		084ECE111ED1F795001AAFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084ECE101ED1F795001AAFF1 /* Assets.xcassets */; };
+		084ECE181ED357A9001AAFF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084ECE161ED357A9001AAFF1 /* Main.storyboard */; };
+		084ECE1C1ED357B6001AAFF1 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 084ECE191ED357B6001AAFF1 /* Main.strings */; };
+		860968EE1DC2113500D78822 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860968ED1DC2113500D78822 /* Alamofire.framework */; };
+		860968F01DC2113A00D78822 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 860968ED1DC2113500D78822 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		860968F41DC2195E00D78822 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860968F21DC2195500D78822 /* KeychainAccess.framework */; };
+		860968F51DC2195E00D78822 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 860968F21DC2195500D78822 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		860968F11DC2113A00D78822 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				860968F51DC2195E00D78822 /* KeychainAccess.framework in Embed Frameworks */,
+				860968F01DC2113A00D78822 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		084ECE011ED1F769001AAFF1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Source/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		084ECE021ED1F769001AAFF1 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfirmViewController.swift; path = Source/ConfirmViewController.swift; sourceTree = SOURCE_ROOT; };
+		084ECE031ED1F769001AAFF1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
+		084ECE041ED1F769001AAFF1 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = Source/Login.swift; sourceTree = SOURCE_ROOT; };
+		084ECE051ED1F769001AAFF1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Source/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		084ECE101ED1F795001AAFF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Source/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		084ECE171ED357A9001AAFF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Source/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		084ECE1A1ED357B6001AAFF1 /* ja-JP */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ja-JP"; path = "Source/ja-JP.lproj/Main.strings"; sourceTree = SOURCE_ROOT; };
+		084ECE1B1ED357B6001AAFF1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Source/ja.lproj/Main.strings; sourceTree = SOURCE_ROOT; };
+		860968DB1DC2056200D78822 /* TokyoTechWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokyoTechWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		860968ED1DC2113500D78822 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		860968F21DC2195500D78822 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/Mac/KeychainAccess.framework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		860968D81DC2056100D78822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860968F41DC2195E00D78822 /* KeychainAccess.framework in Frameworks */,
+				860968EE1DC2113500D78822 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		860968D21DC2056100D78822 = {
+			isa = PBXGroup;
+			children = (
+				860968DD1DC2056200D78822 /* TokyoTechWifiLogin */,
+				860968DC1DC2056200D78822 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		860968DC1DC2056200D78822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				860968DB1DC2056200D78822 /* TokyoTechWifi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		860968DD1DC2056200D78822 /* TokyoTechWifiLogin */ = {
+			isa = PBXGroup;
+			children = (
+				084ECE011ED1F769001AAFF1 /* AppDelegate.swift */,
+				084ECE021ED1F769001AAFF1 /* ConfirmViewController.swift */,
+				084ECE031ED1F769001AAFF1 /* Info.plist */,
+				084ECE041ED1F769001AAFF1 /* Login.swift */,
+				084ECE161ED357A9001AAFF1 /* Main.storyboard */,
+				084ECE191ED357B6001AAFF1 /* Main.strings */,
+				084ECE101ED1F795001AAFF1 /* Assets.xcassets */,
+				084ECE051ED1F769001AAFF1 /* ViewController.swift */,
+				860968F21DC2195500D78822 /* KeychainAccess.framework */,
+				860968ED1DC2113500D78822 /* Alamofire.framework */,
+			);
+			name = TokyoTechWifiLogin;
+			path = TokyoTechLogin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		860968DA1DC2056100D78822 /* TokyoTechWifiLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 860968EA1DC2056200D78822 /* Build configuration list for PBXNativeTarget "TokyoTechWifiLogin" */;
+			buildPhases = (
+				860968D71DC2056100D78822 /* Sources */,
+				860968D81DC2056100D78822 /* Frameworks */,
+				860968D91DC2056100D78822 /* Resources */,
+				860968F11DC2113A00D78822 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokyoTechWifiLogin;
+			productName = TokyoTechLogin;
+			productReference = 860968DB1DC2056200D78822 /* TokyoTechWifi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		860968D31DC2056100D78822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = nanashiki;
+				TargetAttributes = {
+					860968DA1DC2056100D78822 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 860968D61DC2056100D78822 /* Build configuration list for PBXProject "TokyoTechWifiLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"ja-JP",
+				ja,
+			);
+			mainGroup = 860968D21DC2056100D78822;
+			productRefGroup = 860968DC1DC2056200D78822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				860968DA1DC2056100D78822 /* TokyoTechWifiLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		860968D91DC2056100D78822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084ECE1C1ED357B6001AAFF1 /* Main.strings in Resources */,
+				084ECE111ED1F795001AAFF1 /* Assets.xcassets in Resources */,
+				084ECE181ED357A9001AAFF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		860968D71DC2056100D78822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084ECE091ED1F769001AAFF1 /* Login.swift in Sources */,
+				084ECE061ED1F769001AAFF1 /* AppDelegate.swift in Sources */,
+				084ECE0A1ED1F76A001AAFF1 /* ViewController.swift in Sources */,
+				084ECE071ED1F769001AAFF1 /* ConfirmViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		084ECE161ED357A9001AAFF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				084ECE171ED357A9001AAFF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		084ECE191ED357B6001AAFF1 /* Main.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				084ECE1A1ED357B6001AAFF1 /* ja-JP */,
+				084ECE1B1ED357B6001AAFF1 /* ja */,
+			);
+			name = Main.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		860968E81DC2056200D78822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		860968E91DC2056200D78822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		860968EB1DC2056200D78822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nanashiki.TokyoTechWifiLogin;
+				PRODUCT_NAME = TokyoTechWifi;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		860968EC1DC2056200D78822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nanashiki.TokyoTechWifiLogin;
+				PRODUCT_NAME = TokyoTechWifi;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		860968D61DC2056100D78822 /* Build configuration list for PBXProject "TokyoTechWifiLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				860968E81DC2056200D78822 /* Debug */,
+				860968E91DC2056200D78822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		860968EA1DC2056200D78822 /* Build configuration list for PBXNativeTarget "TokyoTechWifiLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				860968EB1DC2056200D78822 /* Debug */,
+				860968EC1DC2056200D78822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 860968D31DC2056100D78822 /* Project object */;
+}

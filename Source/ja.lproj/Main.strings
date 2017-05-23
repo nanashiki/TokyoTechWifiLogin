@@ -1,0 +1,57 @@
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "04s-bc-TcA"; */
+"04s-bc-TcA.title" = "終了";
+
+/* Class = "NSMenuItem"; title = "TokyoTechWifiLogin"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "TokyoTechWifi";
+
+/* Class = "NSMenuItem"; title = "Quit TokyoTechWifiLogin"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "TokyoTechWifiを終了";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "環境設定…";
+
+/* Class = "NSWindow"; title = "Setting"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "アカウント設定";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Account"; ObjectID = "LMG-ha-IyB"; */
+"LMG-ha-IyB.placeholderString" = "アカウント";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "Lqd-Ej-wfl"; */
+"Lqd-Ej-wfl.title" = "キャンセル";
+
+/* Class = "NSMenuItem"; title = "Launch at Login"; ObjectID = "Lya-p0-6e1"; */
+"Lya-p0-6e1.title" = "ログイン時に起動";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Window";
+
+/* Class = "NSViewController"; title = "Setting"; ObjectID = "XfG-lQ-9wD"; */
+"XfG-lQ-9wD.title" = "アカウント設定";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "Password"; ObjectID = "afI-Vz-fZ4"; */
+"afI-Vz-fZ4.placeholderString" = "パスワード";
+
+/* Class = "NSMenuItem"; title = "Login"; ObjectID = "dl0-s5-ZZZ"; */
+"dl0-s5-ZZZ.title" = "TokyoTech Wi-Fiにログイン";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "evQ-mJ-bRi"; */
+"evQ-mJ-bRi.title" = "Label";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "m2S-l7-sBK"; */
+"m2S-l7-sBK.title" = "保存";
+
+/* Class = "NSMenuItem"; title = "Account Setting"; ObjectID = "noG-gC-dvB"; */
+"noG-gC-dvB.title" = "アカウント設定";
+
+/* Class = "NSMenu"; title = "TokyoTechWifiLogin"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "TokyoTechWifi";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "vUw-Fg-QAm"; */
+"vUw-Fg-QAm.title" = "OK";

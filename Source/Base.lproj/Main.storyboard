@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="TokyoTechWifiLogin" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="TokyoTechWifiLogin" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About TokyoTechWifiLogin" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit TokyoTechWifiLogin" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Window" id="aUF-d1-5bR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Help" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TokyoTechWifi" customModuleProvider="target">
+                    <connections>
+                        <outlet property="launchAtLoginItem" destination="Lya-p0-6e1" id="DSd-IU-RXJ"/>
+                        <outlet property="loginItem" destination="dl0-s5-ZZZ" id="5JW-Hi-XTo"/>
+                        <outlet property="menu" destination="EWU-Ow-mfn" id="fsV-eC-JcI"/>
+                    </connections>
+                </customObject>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="EWU-Ow-mfn">
+                    <items>
+                        <menuItem title="Login TokyoTech Wi-Fi" enabled="NO" id="dl0-s5-ZZZ">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="loginBtnAction:" target="Voe-Tx-rLC" id="YM0-II-yoL"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="npv-vO-Zzk"/>
+                        <menuItem title="Account Setting" id="noG-gC-dvB">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <segue destination="B8D-0N-5wS" kind="modal" id="mIf-2O-RKT"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Launch at Login" id="Lya-p0-6e1">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="launchAtLoginBtnAction:" target="Voe-Tx-rLC" id="kNl-eG-afv"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="HST-Wp-Ppd"/>
+                        <menuItem title="Quit" keyEquivalent="q" id="04s-bc-TcA">
+                            <connections>
+                                <action selector="quitBtnAction:" target="Voe-Tx-rLC" id="QtU-Il-5Ai"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Setting" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="306" height="158"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="301"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController title="Setting" id="XfG-lQ-9wD" customClass="ViewController" customModule="TokyoTechWifi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="308" height="132"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5Q-aa-b5B">
+                                <rect key="frame" x="20" y="90" width="268" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Account" drawsBackground="YES" id="LMG-ha-IyB">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cdD-Yf-Esy">
+                                <rect key="frame" x="169" y="19" width="70" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Tya-F7-6vV"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundRect" title="Save" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="m2S-l7-sBK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="cellTitle"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="saveBtnAction:" target="XfG-lQ-9wD" id="Jq4-RQ-dEY"/>
+                                </connections>
+                            </button>
+                            <secureTextField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBy-th-Apm">
+                                <rect key="frame" x="20" y="58" width="268" height="22"/>
+                                <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Password" drawsBackground="YES" usesSingleLineMode="YES" id="afI-Vz-fZ4">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </secureTextFieldCell>
+                            </secureTextField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sR1-Xg-y5y">
+                                <rect key="frame" x="69" y="19" width="70" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="0Vk-Rz-eQg"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundRect" title="Cancel" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lqd-Ej-wfl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="cellTitle"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelBtnAction:" target="XfG-lQ-9wD" id="Iff-pr-Pi0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rBy-th-Apm" firstAttribute="top" secondItem="X5Q-aa-b5B" secondAttribute="bottom" constant="10" id="12i-Yg-kzP"/>
+                            <constraint firstItem="sR1-Xg-y5y" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="-50" id="7XA-JU-9FH"/>
+                            <constraint firstItem="rBy-th-Apm" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="9nw-RO-ybR"/>
+                            <constraint firstItem="cdD-Yf-Esy" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="50" id="FNP-VT-U7W"/>
+                            <constraint firstItem="X5Q-aa-b5B" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="RjZ-vK-XDN"/>
+                            <constraint firstItem="X5Q-aa-b5B" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="TEe-LS-UPD"/>
+                            <constraint firstItem="sR1-Xg-y5y" firstAttribute="top" secondItem="rBy-th-Apm" secondAttribute="bottom" constant="20" id="aXn-H1-jBV"/>
+                            <constraint firstItem="cdD-Yf-Esy" firstAttribute="top" secondItem="rBy-th-Apm" secondAttribute="bottom" constant="20" id="o7l-5Y-Upr"/>
+                            <constraint firstAttribute="trailing" secondItem="X5Q-aa-b5B" secondAttribute="trailing" constant="20" id="rC7-x2-IQk"/>
+                            <constraint firstAttribute="trailing" secondItem="rBy-th-Apm" secondAttribute="trailing" constant="20" id="zMd-Zh-Cn7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accountTF" destination="X5Q-aa-b5B" id="ise-JS-a5w"/>
+                        <outlet property="passwordTF" destination="rBy-th-Apm" id="haa-J9-nU0"/>
+                        <segue destination="1xx-fF-MDD" kind="sheet" identifier="Confirm" id="fao-ay-Ltg"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="288"/>
+        </scene>
+        <!--Confirm View Controller-->
+        <scene sceneID="tKz-sG-2ed">
+            <objects>
+                <viewController id="1xx-fF-MDD" customClass="ConfirmViewController" customModule="TokyoTechWifi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="sUv-YT-tRb">
+                        <rect key="frame" x="0.0" y="0.0" width="232" height="103"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TPN-lC-ovV">
+                                <rect key="frame" x="87" y="13" width="59" height="32"/>
+                                <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vUw-Fg-QAm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="confirmBtnAction:" target="1xx-fF-MDD" id="CA2-cy-sEn"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kej-Az-pnc">
+                                <rect key="frame" x="98" y="66" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="evQ-mJ-bRi">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="TPN-lC-ovV" firstAttribute="centerX" secondItem="sUv-YT-tRb" secondAttribute="centerX" id="LJn-Hf-day"/>
+                            <constraint firstItem="Kej-Az-pnc" firstAttribute="top" secondItem="sUv-YT-tRb" secondAttribute="top" constant="20" id="RJC-JA-K5p"/>
+                            <constraint firstItem="Kej-Az-pnc" firstAttribute="centerX" secondItem="sUv-YT-tRb" secondAttribute="centerX" id="h6j-Sq-zKo"/>
+                            <constraint firstAttribute="bottom" secondItem="TPN-lC-ovV" secondAttribute="bottom" constant="20" id="u58-Yc-yVb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="Kej-Az-pnc" id="Id5-uX-SoC"/>
+                    </connections>
+                </viewController>
+                <customObject id="8Fs-7a-461" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="274"/>
+        </scene>
+    </scenes>
+</document>
