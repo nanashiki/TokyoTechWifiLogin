@@ -14,7 +14,7 @@ import CFNetwork
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate,CWEventDelegate,NSUserNotificationCenterDelegate {
-    var statusItem = NSStatusBar.system().statusItem(withLength: -1)
+    var statusItem = NSStatusBar.system.statusItem(withLength: -1)
     @IBOutlet weak var menu: NSMenu!
     var interface:CWInterface?
     let login = Login.shared
@@ -28,35 +28,36 @@ class AppDelegate: NSObject, NSApplicationDelegate,CWEventDelegate,NSUserNotific
         self.statusItem.menu = menu
         self.statusItem.target = self
         self.statusItem.title = "No Wi-Fi"
-        if let interface = CWWiFiClient()?.interface(withName: "en0") {
+        if let interface = CWWiFiClient().interface(withName: "en0") {
             self.interface = interface
             
             defer {
                 login.start(ssid: {
-                    return interface.ssid()
-                }, completion: {
-                    status in
-                    switch status {
-                    case .success:
-                        self.deliverNotification(title: "Login Success", informativeText: "Successful in Login TokyoTech Wi-Fi")
-                    case .alreadySuccess:
-                        self.deliverNotification(title: "Already Login", informativeText: "Already Login TokyoTech Wi-Fi")
-                    case .failure:
-                        self.deliverNotification(title: "Login Failed", informativeText: "Account or Password is incorrect")
-                    default:
-                        break
-                    }
-                    
-                    if let ssid = interface.ssid(){
-                        if ssid == "TokyoTech" || ssid == "titech-pubnet" {
-                            self.loginItem.isEnabled = true
+                    interface.ssid()
+                }, completion: { status in
+                    DispatchQueue.main.async {
+                        switch status {
+                        case .success:
+                            self.deliverNotification(title: "Login Success", informativeText: "Successful in Login TokyoTech Wi-Fi")
+                        case .alreadySuccess:
+                            self.deliverNotification(title: "Already Login", informativeText: "Already Login TokyoTech Wi-Fi")
+                        case .failure:
+                            self.deliverNotification(title: "Login Failed", informativeText: "Account or Password is incorrect")
+                        default:
+                            break
+                        }
+                        
+                        if let ssid = interface.ssid() {
+                            if ssid == "TokyoTech" || ssid == "titech-pubnet" {
+                                self.loginItem.isEnabled = true
+                            }else{
+                                self.loginItem.isEnabled = false
+                            }
+                            self.statusItem.title = ssid
                         }else{
                             self.loginItem.isEnabled = false
+                            self.statusItem.title = "No Wi-Fi"
                         }
-                        self.statusItem.title = ssid
-                    }else{
-                        self.loginItem.isEnabled = false
-                        self.statusItem.title = "No Wi-Fi"
                     }
                 })
             }
@@ -77,9 +78,9 @@ class AppDelegate: NSObject, NSApplicationDelegate,CWEventDelegate,NSUserNotific
         }
         
         if existingItem(itemUrl: Bundle.main.bundleURL) != nil {
-            launchAtLoginItem.state = NSOnState
+            launchAtLoginItem.state = .on
         } else {
-            launchAtLoginItem.state = NSOffState
+            launchAtLoginItem.state = .off
         }
         
         //logout
@@ -91,7 +92,7 @@ class AppDelegate: NSObject, NSApplicationDelegate,CWEventDelegate,NSUserNotific
     }
     
     @IBAction func quitBtnAction(_ sender: NSMenuItem) {
-        NSApplication.shared().terminate(self)
+        NSApplication.shared.terminate(self)
     }
     
     @IBAction func loginBtnAction(_ sender: NSMenuItem) {
@@ -110,8 +111,8 @@ class AppDelegate: NSObject, NSApplicationDelegate,CWEventDelegate,NSUserNotific
         login.login()
     }
     @IBAction func launchAtLoginBtnAction(_ sender: NSMenuItem) {
-        let wasOn = sender.state == NSOnState
-        sender.state = (wasOn ? NSOffState : NSOnState)
+        let wasOn = sender.state == .on
+        sender.state = (wasOn ? .off : .on)
         setLaunchAtLogin(itemUrl: Bundle.main.bundleURL, enabled: !wasOn)
     }
     
@@ -119,7 +120,7 @@ class AppDelegate: NSObject, NSApplicationDelegate,CWEventDelegate,NSUserNotific
         login.status = .accountNotSet
         login.logout(completion: {
             _ in
-            NSApplication.shared().terminate(self)
+            NSApplication.shared.terminate(self)
         })
     }
     
@@ -135,20 +136,20 @@ class AppDelegate: NSObject, NSApplicationDelegate,CWEventDelegate,NSUserNotific
         
     }
     
-    override func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
-        if menuItem == self.loginItem {
-            if let ssid = interface?.ssid(){
-                if ssid == "TokyoTech" || ssid == "titech-pubnet" {
-                    return true
-                }else{
-                    return false
-                }
-            }
-            return false
-        }
-        
-        return true
-    }
+//    func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
+//        if menuItem == self.loginItem {
+//            if let ssid = interface?.ssid(){
+//                if ssid == "TokyoTech" || ssid == "titech-pubnet" {
+//                    return true
+//                }else{
+//                    return false
+//                }
+//            }
+//            return false
+//        }
+//        
+//        return true
+//    }
     
     // MARK: - Launch At Login Helper
     
