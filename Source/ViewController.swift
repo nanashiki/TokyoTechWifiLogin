@@ -79,13 +79,13 @@ class ViewController: NSViewController {
     func tfConfirmation()->(ACPASSConfirmationError,String,String){
         if var account = accountTF?.stringValue{
             if let password = passwordTF?.stringValue{
-                if account.characters.count == 0 || account.contains(" "){
+                if account.isEmpty || account.contains(" "){
                     return (.AccountContainSpace,"","")
                 }
                 
                 account = account.uppercased()
                 
-                if password.characters.count < 8 || password.contains(" "){
+                if password.count < 8 || password.contains(" "){
                     return (.PasswordIllegalString,"","")
                 }
                 

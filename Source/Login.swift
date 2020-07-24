@@ -45,13 +45,11 @@ public struct PortalAccount {
 open class Login: NSObject {
     open var status = LoginStatus.logout
     static let shared = Login()
-    var sessionManager : SessionManager
     open var account = PortalAccount(username:"",password:"")
     
     fileprivate override init() {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 3
-        sessionManager = SessionManager(configuration: configuration)
     }
     
     
@@ -96,7 +94,7 @@ open class Login: NSObject {
     
     open func login(completion:((LoginStatus)->())? = nil){
         status = .nowLogin
-        sessionManager.request(LoginURL.login,
+        AF.request(LoginURL.login,
                           method: .post,
                           parameters: ["username":account.username,
                                        "password":account.password,
@@ -129,7 +127,7 @@ open class Login: NSObject {
     }
     
     open func logout(completion: ((Bool)->())? = nil) {
-        sessionManager.request(LoginURL.logout,
+        AF.request(LoginURL.logout,
                           method: .post,
                           parameters: ["userStatus":"1",
                                        "err_flag":"0",
